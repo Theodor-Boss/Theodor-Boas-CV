@@ -171,6 +171,23 @@ a {
     background-color: rgb(194, 194, 60);
 }
 
+
+.referencer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgb(26, 209, 200);
+}
+
+.footer { 
+    height: 120px;
+    background-color: black;
+    bottom: 0; 
+    left: 0; 
+    z-index: 10;
+}
+
+
 .image {
     width: 300px;
     height: 1000px;
