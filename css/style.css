@@ -1,0 +1,627 @@
+/* 
+Theme Name: Hello Elementor Child
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+    Add your custom styles here
+*/
+
+/* -- Text -- */
+/* Indholds overskrifter */
+.elementor-location-single h4,
+.elementor-location-single h5,
+.elementor-location-single h6 {
+    margin-top: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+.elementor-location-single h5 {
+    margin-top: inherit !important;
+}
+
+#box-bgtwo h4 {
+    margin-top: 0;
+}
+
+#text-white h2,
+#text-white p,
+#text-white .lead {
+    color: var(--e-global-color-661ef5b);
+}
+
+.elementor a {
+    color: var(--e-global-color-ca8e8af);
+
+}
+
+a:active, a:hover {
+    color: var(--e-global-color-accent);
+
+}
+
+#box-yellow a:active,
+#box-yellow a:hover {
+    color: var(--e-global-color-text);
+    background-color: var(--e-global-color-secondary);
+
+}
+
+
+/* -- nav-bar -- */
+/* site-logo */
+@media (max-width: 767px) {
+    .elementor-widget-theme-site-logo>div {
+        text-align: center;
+    }
+}
+
+#nav-primary {
+    height: 100%;
+    display: grid;
+    align-content: center;
+}
+
+/* #nav-primaty .elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item:hover, 
+#nav-primaty .elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item.elementor-item-active, 
+#nav-primaty .elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item.highlighted, 
+#nav-primaty .elementor-widget-nav-menu .elementor-nav-menu--main .elementor-item:focus {
+    fill: var(--e-global-color-d8978da);
+    background: rgb(246, 228, 195);
+    background: -moz-linear-gradient(0deg, rgba(246, 228, 195, 1) 0%, rgba(245, 247, 250, 1) 20%);
+    background: -webkit-linear-gradient(0deg, rgba(246, 228, 195, 1) 0%, rgba(245, 247, 250, 1) 20%);
+    background: linear-gradient(0deg, rgba(246, 228, 195, 1) 0%, rgba(245, 247, 250, 1) 20%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f6e4c3", endColorstr="#f5f7fa", GradientType=1);
+    color: var(--e-global-color-text);
+    border-bottom: 4px solid var(--e-global-color-secondary);
+} */
+
+/* mobile nav */
+
+/* #mobile-nav{
+        position: fixed;
+    }
+    #mobile-nav div.elementor-menu-toggle {
+        right: 24px;
+        bottom: 140px;
+        position: fixed;
+    } */
+
+
+/* ---- */
+
+
+/* -- knapper -- */
+
+/* .elementor-element.elementor-button-info .elementor-button {
+    background-color: transparent;
+    border: 2px solid var(--e-global-color-primary);
+    color: var(--e-global-color-primary);
+} */
+
+.elementor-widget-container>.elementor-button-link {
+    margin-bottom: 0.9rem;
+}
+
+/* Hvid knap #text-white */
+#text-white .elementor-button-link.elementor-button {
+    border-color: var(--e-global-color-661ef5b);
+    color: var(--e-global-color-661ef5b);
+}
+
+/* White button */
+#button-white .elementor-button,
+div#\#button-white {
+    background: #F5F7FA;
+    box-shadow: 7px 7px 14px #dadcdf,
+        -7px -7px 14px #ffffff;
+    color: var(--e-global-color-ca8e8af);
+}
+
+#button-white .elementor-button:hover,
+div#\#button-white:hover {
+    background: var(--e-global-color-accent);
+    box-shadow: inset 4px 4px 8px #3c666a,
+        inset -4px -4px 8px #6ab6bc;
+    color: var(--e-global-color-d8978da);
+}
+
+div#\#button-white {
+    margin-bottom: 2rem;
+}
+
+div#\#button-white a:hover {
+    color: var(--e-global-color-d8978da);
+}
+
+/* Drak blue button in shortcode box */
+div.fakta-box div#\#button-white {
+    border-radius: 50px;
+    background: var(--e-global-color-primary);
+    box-shadow: 7px 7px 14px #344152,
+        -7px -7px 14px #546782;
+    color: var(--e-global-color-d8978da);
+    text-decoration: none !important;
+}
+
+div.fakta-box div#\#button-white:hover {
+    background: var(--e-global-color-c54775a);
+    box-shadow: inset 4px 4px 8px #44728e,
+        inset -4px -4px 8px #6cb6e4;
+}
+
+div.fakta-box div#\#button-white a {
+    text-decoration: none;
+}
+
+/* ligth green button */
+#button-green .elementor-button {
+    background: #B9CDB5;
+    box-shadow: 6px 6px 14px #899886, -6px -6px 14px #d5ecd0;
+    /* border-radius: 100px; */
+    border: none;
+    color: var(--e-global-color-text);
+}
+
+#button-green .elementor-button:hover {
+    background: #B9CDB5;
+    box-shadow: inset 4px 4px 8px #899886,
+        inset -4px -4px 8px #e9ffe4;
+}
+
+/* Dark gren button */
+#button-darkgreen .elementor-button {
+    background: #538E93;
+    box-shadow: 7px 7px 14px #3d696d,
+        -7px -7px 14px #69b3b9;
+    /* border-radius: 100px; */
+    border: none;
+}
+
+#button-darkgreen .elementor-button:hover {
+    background: #538E93;
+    box-shadow: inset 4px 4px 8px #3d696d,
+        inset -4px -4px 8px #69b3b9;
+}
+
+/* Blue button */
+#button-blue .elementor-button {
+    background: #CADBE8;
+    box-shadow: 7px 7px 14px #95a2ac,
+        -7px -7px 14px #ffffff;
+    border: none;
+    color: var(--e-global-color-text);
+}
+
+#button-blue .elementor-button:hover {
+    background: #CADBE8;
+    box-shadow: inset 4px 4px 8px #95a2ac,
+        inset -4px -4px 8px #ffffff;
+}
+
+
+/* Yellow button */
+#button-yellow .elementor-button {
+    background: var(--e-global-color-secondary);
+    box-shadow: 7px 7px 14px #c49637,
+        -7px -7px 14px #ffcc4b;
+    color: var(--e-global-color-text)
+}
+
+#button-yellow .elementor-button:hover {
+    box-shadow: inset 4px 4px 8px #c49637,
+        inset -4px -4px 8px #ffcc4b;
+}
+
+/* Baggrund 1 button */
+#box-bgone .elementor-button {
+    background: var(--e-global-color-661ef5b);
+    box-shadow: 7px 7px 14px #d4dae0,
+        -7px -7px 14px #f8ffff;
+    text-shadow: none;
+    border: none;
+}
+
+#box-bgone .elementor-button:hover {
+    box-shadow: inset 4px 4px 8px #d4dae0,
+        inset -4px -4px 8px #f8ffff;
+}
+
+/* book knap på indholds skabelon */
+#box-book .elementor-button-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* ---- */
+
+/* -- lister -- */
+/* Arrangemengter */
+#list .ecs-post-loop:nth-child(odd) #list-item > div{
+    background: var(--e-global-color-661ef5b);  
+    border-radius: 30px;
+}
+#list .ecs-post-loop #list-item > div{
+    background: var(--e-global-color-13575e7);   
+    border-radius: 30px;
+}
+/* Nyheder */
+#news-list article {
+    flex-flow: column;
+}
+
+#news-list article{
+    background: var(--e-global-color-661ef5b);
+}
+#news-list article:nth-child(odd){
+    background: var(--e-global-color-13575e7);
+}
+
+#list .elementor-has-item-ratio article
+/* #news-list .elementor-has-item-ratio article */ {
+    min-height: 175px;
+    align-items: flex-start;
+}
+
+#news-list article .elementor-post__text {
+    padding: 20px 30px;
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    #list .elementor-has-item-ratio article
+    /* #news-list .elementor-has-item-ratio article*/ { 
+        height: 175px;
+    }
+    #news-list .elementor-has-item-ratio article{
+        min-height: 200px;
+    }
+    #news-list article{
+        flex-flow: row;
+    }
+}
+
+#list article>.elementor-post__text {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.elementor-has-item-ratio article {
+    align-items: center;
+}
+
+/* troncare short description in list */
+#text-overflow p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+@media (min-width:768px) {
+    #text-overflow p{
+        -webkit-line-clamp: 1;
+    }
+    
+}
+
+
+/* lister heading */
+/* .elementor-post__title {
+    text-transform: lowercase;
+}
+
+.elementor-post__title::first-letter {
+    text-transform: uppercase;
+} */
+
+@media (max-width: 767px) {
+    #list .elementor-post__thumbnail__link {
+        width: 100%;
+        display: none;
+    }
+    /* #list-img {
+        width: 100%;
+        margin-bottom: 16px;
+      }    */
+
+}
+@media (max-width: 1024){
+ 
+}
+
+/* overlay billeder på lister*/
+/* .elementor-post__thumbnail {
+    background-color: var(--e-global-color-c54775a);
+}
+
+.elementor-post__thumbnail img {
+    opacity: 0.6;
+} */
+
+/* ---- */
+
+
+/* -- boks -- */
+#box-yellow article.elementor-post,
+#box-bgone .elementor-widget-container,
+#box-bgtwo,
+#related .elementor-post__card,
+#related article.elementor-post {
+    border-radius: 50px;
+}
+
+#box-yellow article.elementor-post {
+    background: #f8e9ce;
+    box-shadow: 7px 7px 14px #bfb39f,
+        -7px -7px 14px #ffffe5;
+}
+
+#box-bgone .elementor-widget-container {
+    background: var(--e-global-color-661ef5b);
+    box-shadow: 7px 7px 14px #d4dae0,
+        -7px -7px 14px #ffffff;
+}
+
+#box-bgtwo,
+#related article.elementor-post {
+    background: var(--e-global-color-d8978da);
+    box-shadow: 7px 7px 14px #dadcdf,
+        -7px -7px 14px #ffffff;
+    color: var(--e-global-color-ca8e8af);
+}
+
+#related article.elementor-post:hover {
+    box-shadow: none;
+}
+
+#related .elementor-post__card:hover {
+    background: var(--e-global-color-d8978da);
+    box-shadow: inset 4px 4px 8px #cbcdd0,
+        inset -4px -4px 8px #ffffff;
+}
+
+/* ---- */
+
+/* -- related -- */
+#related .elementor-post__card {
+    padding: 50px 0px 60px;
+    background-color: var(--e-global-color-d8978da);
+}
+
+#related .elementor-post__card a {
+    color: var(--e-global-color-text);
+}
+
+#related .elementor-post__card a:hover {
+    color: var(--e-global-color-accent);
+
+}
+
+#related .elementor-post__text {
+    display: grid;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#related a.elementor-post__thumbnail__link {
+    margin: 0;
+}
+
+/* Gemmer billede på relaterede nyheder */
+#related .elementor-post__thumbnail__link>div {
+    display: none;
+}
+
+/* Placering af badge på releterede nyheder */
+#related .elementor-posts .elementor-post__badge {
+    /* right: unset !important; */
+    width: 100%;
+    display: block;
+    margin: 0 !important;
+    border-radius: 0px !important;
+}
+
+/* citater */
+.wp-block-quote {
+    margin-block-start: 3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-block-end: 4em;
+}
+
+.wp-block-quote p::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: block;
+    font-size: 2em;
+    margin-bottom: 0.3em;
+    color: var(--e-global-color-secondary);
+}
+
+.wp-block-quote p {
+    margin-bottom: 0;
+}
+
+.wp-block-quote cite {
+    font-size: 0.85rem;
+    font-style: inherit;
+}
+
+
+/* shortcode */
+/* faktabox */
+
+.fakta-box,
+.fakta-box-to {
+    background: var(--e-global-color-primary);
+    padding: 24px 40px 30px;
+    color: var(--e-global-color-661ef5b);
+    font-size: 0.95em;
+    margin-bottom: 0.9rem;
+    border-radius: 50px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.fakta-box-to {
+    background: var(--e-global-color-661ef5b);
+    color: var(--e-global-color-text);
+}
+
+.fakta-box a {
+    color: var(--e-global-color-661ef5b);
+    text-decoration: underline;
+}
+
+.fakta-box-to a {
+    color: var(--e-global-color-text);
+    text-decoration: underline;
+}
+
+.fakta-box a:hover,
+.fakta-box-to a:hover {
+    color: var(--e-global-color-accent);
+}
+
+/* forside */
+/* bokst elementer */
+#half-boxed-content {
+    width: 570px;
+    max-width: 570px;
+    min-width: 570px;
+}
+
+#half-boxed-empty {
+    width: 100%;
+}
+
+p.clearfix {
+    padding-bottom: 0 !important;
+}
+
+.clearfix:before,
+.clearfix:after,
+.container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after, .container:after, .container-fluid:after, .row:after {
+    clear: both;
+}
+
+@media (max-width: 1140px) {
+    #half-boxed-content {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    #half-boxed-empty {
+        display: none;
+    }
+}
+
+/* ---- */
+
+/* Top slider */
+.bdt-prime-slider-skin-general .bdt-prime-slider-desc .bdt-main-title .bdt-title-tag {
+    line-height: 1em !important;
+}
+
+@media (min-width: 1440px) {
+    .bdt-prime-slider-skin-general .bdt-prime-slider-desc .bdt-main-title .bdt-title-tag {
+        font-size: 10vh !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .bdt-prime-slider-skin-general .bdt-prime-slider-desc .bdt-main-title .bdt-title-tag {
+        font-size: 10vh;
+    }
+}
+
+@media (min-width: 768px) {
+    .bdt-prime-slider-skin-general .bdt-prime-slider-desc .bdt-main-title .bdt-title-tag {
+        font-size: 10vh;
+    }
+}
+
+@media (min-width: 640px) {
+    .bdt-prime-slider-skin-general .bdt-prime-slider-desc .bdt-main-title .bdt-title-tag {
+        font-size: 5vh;
+    }
+}
+
+@media (min-width: 376px) {
+    .bdt-prime-slider-skin-general .bdt-prime-slider-desc .bdt-main-title .bdt-title-tag {
+        font-size: 4vh;
+    }
+}
+
+.bdt-slideshow-items {
+    min-height: 70vh !important;
+}
+
+.bdt-prime-slider-skin-general .bdt-slide-btn,
+.bdt-prime-slider-skin-general .bdt-prime-slider-next:hover,
+.bdt-prime-slider-skin-general .bdt-prime-slider-previous:hover {
+    border-color: var(--e-global-color-secondary) !important;
+}
+
+.bdt-prime-slider-skin-general .bdt-slide-btn .bdt-slide-btn-icon,
+.bdt-prime-slider-skin-general .bdt-slide-btn:hover,
+.bdt-prime-slider-skin-general .bdt-prime-slider-next:hover,
+.bdt-prime-slider-skin-general .bdt-prime-slider-previous:hover {
+    background-color: var(--e-global-color-secondary) !important;
+}
+
+ /* Footer */
+ #footer-top {
+    background-size: 400% 100%;
+}
+
+@media (min-width:768px) {
+    #footer-top {
+        background-size: 200% 100%;
+    }
+
+}
+
+@media (min-width:1140px) {
+    #footer-top {
+        background-size: 100% 100%;
+    }
+
+}
+
+/* Footer mobil */
+@media (max-width: 767px) {
+    #footer-menu li {
+        display: flex;
+        justify-content: center;
+    }
+
+    #footer-menu h4,
+    #footer-menu h5 {
+        text-align: center;
+    }
+
+    #button-yellow div {
+        margin-right: 0px;
+        /* width: 100%; */
+    }
+    #button-white div {
+        padding-right: 0px;
+    }
+}
